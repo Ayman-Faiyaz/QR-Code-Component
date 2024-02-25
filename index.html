@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>QR code component - Scan to Learn!</title>
+</head>
+<body>
+
+  <div>
+    <a href="image-qr-code.png" target="_blank">
+      <img src="image-qr-code.png" id="code">
+    </a>
+  </div>
+
+  <div>
+    <h1 style="max-width: 270px; text-align: center; color: var(--text-color);">Improve your front-end skills by building projects</h1>
+  </div>
+
+  <div>
+    <h3 style="max-width: 270px; text-align: center; color: var(--text-color);">Scan the QR code to visit <a href="https://www.frontendmentor.io" target="_blank" style="text-decoration: none; color: var(--text-color);"><span style="text-decoration: none;">Frontend Mentor</span></a> and take your coding skills to the next level</h3>
+  </div>
+  
+  <div id="bg-box"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <script>
+      document.getElementsByClassName("Search")[0].addEventListener("click", () => {
+          confetti();
+      });        
+  </script>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.youtube.com/@cappeddude" target="_blank">Ayman Tahiat Faiyaz</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
